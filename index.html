@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,17 +8,25 @@
     <link rel="stylesheet" href="css/style.css">
     <title>Prueba</title>
 </head>
+
 <body>
     <header class="header">
         <h1 class="title">TITULO</h1>
+        <article class="money"><h2 id="money_art">100</h2></article>
+        <article class="apuesta">
+            <input type="number" name="apuesta__select" id="apuesta__select" class="apuesta__select" min="1">
+        </article>
     </header>
     <main class="main">
-        <div class="slot__container" id="slot1"></div>
-        <div class="slot__container" id="slot2"></div>
-        <div class="slot__container" id="slot3"></div>
+        <div class="slot__container" id="slot__container">
+            <div class="slot" id="slot1"></div>
+            <div class="slot" id="slot2"></div>
+            <div class="slot" id="slot3"></div>
+        </div>
         <button class="play" id="playbtn">Play</button>
     </main>
 
     <script src="js/script.js"></script>
 </body>
+
 </html>

@@ -6,16 +6,27 @@ body{
 }
 .header{
     display: flex;
+    justify-content: space-between;
     height: 10vh;
     border-bottom: 1px solid red;
+}
+.money{
+    border: 1px solid blue;
+    width: 30%
 }
 .main{
     display: flex;
 }
 .slot__container{
+    display: flex;
+    border: 10px solid lawngreen;
+}
+.slot{
     height: 300px;
     width: 300px;
     border: 1px solid blue;
+    border-radius: 10%;
+    background-color: rgba(221, 202, 202, 0.452);
     background-size: cover;
     background-image: url(../assets/images/america.png);
 }
