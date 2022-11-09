@@ -1,0 +1,25 @@
+body{
+    height: 100vh;
+    width: 100vw;
+    margin: 0;
+    padding: 0;
+}
+.header{
+    display: flex;
+    height: 10vh;
+    border-bottom: 1px solid red;
+}
+.main{
+    display: flex;
+}
+.slot__container{
+    height: 300px;
+    width: 300px;
+    border: 1px solid blue;
+    background-size: cover;
+    background-image: url(../assets/images/america.png);
+}
+.play{
+    width: 250px;
+    height: 250px;
+}
