@@ -6,36 +6,123 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
-    <title>Prueba</title>
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/aside.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/store.css">
+    <link rel="stylesheet" href="css/animation.css">
+    <title>Marvel Slot</title>
 </head>
 
 <body>
+    <!-- Header fomrado por 4 contenedores -->
     <header class="header">
-        <h1 class="title">Loogo</h1>
+        <!-- LOGO -->
+        <h1 class="title nomtb">
+            <img src="./assets/images/marvellogo.png" alt="" class="imgheader">
+        </h1>
+        <!-- Muestra el credito del usuario -->
         <article class="money">
-            <h3>Credito: </h3>
-            <span id="money_art">100</span>
+            <h3 class="nomtb">CREDITO</h3>
+            <span id="money_art"></span>
         </article>
+        <!-- Para introducir el tamagno de la apuesta -->
         <article class="apuesta">
-            <h3>Apuesta: </h3>
-            <input type="number" name="apuesta__select" id="apuesta__select" class="apuesta__select" min="1">
+            <h3 class="nomtb">APUESTA</h3>
+            <input type="number" name="apuesta__select" id="apuesta__select" class="input" min="1">
+        </article>
+        <!-- Para insertar dinero -->
+        <article class="dinero">
+            <h3 class="nomtb">INSERTAR DINERO</h3>
+            <input type="number" name="dinero_input" id="dinero_input" class="input" min="1" value="1">
+            <button class="insertbtn" id="dinerobtn">Insertar</button>
         </article>
     </header>
     <main class="main">
+        <div class="lado"></div>
+        <div class="lado"></div>
+        <div class="lado"></div>
+        <div class="lado"></div>
+        <!-- Contenedor con los rodillos de la maquina -->
         <div class="slot__container" id="slot__container">
-            <div class="slot" id="slot1"></div>
-            <div class="slot" id="slot2"></div>
-            <div class="slot" id="slot3"></div>
+            <div class="slot slot1" id="slot1"></div>
+            <div class="slot slot2" id="slot2"></div>
+            <div class="slot slot3" id="slot3"></div>
         </div>
-        <button class="play" id="playbtn">Play</button>
+        <!-- Botones de play y tienda -->
+        <button class="play mainbtn marvelcolor" id="playbtn">PLAY</button>
+        <button class="tiendabtn mainbtn marvelcolor" id="tiendabtn">TIENDA</button>
+        <section class="tienda" id="tienda">
+            <!-- TEMA 1 -->
+            <article class="tema hulkletter hkbg">
+                <h2 class="tematitle">TEMA HULK</h2>
+                <button class="btntema bghulk hulkletter" id="btncomprahulk">COMPRA</button>
+                <button class="btntema bghulk hulkletter" id="btnactivehulk">ELEGIR</button>
+            </article>
+            <!-- TEMA 2 -->
+            <article class="tema spidletter spbg">
+                <h2>TEMA SPIDERMAN</h2>
+                <button class="btntema bgspid spidletter" id="btncompraspiderman">COMPRA </button>
+                <button class="btntema bgspid spidletter" id="btnactivespiderman">ELEGIR</button>
+            </article>
+            <div class="marvelcolor quitartienda"><p class="xtienda"  id="quitartienda">x</p></div>
+        </section>
     </main>
+    <!-- 5 Articulos iguales -->
+    <aside class="aside"  id="aside">
+        <!-- Cada uno un contenedor con tres imagenes y un titulo -->
+        <article class="art_aside">
+            <div class="art_container">
+                <img src="./assets/images/america.png" alt="" class="img_aside">
+                <img src="./assets/images/america.png" alt="" class="img_aside">
+                <img src="./assets/images/america.png" alt="" class="img_aside">
+            </div>
+            <h3 class="nomtb"> x 5 </h3>
+        </article>
+        <article class="art_aside">
+            <div class="art_container">
+                <img src="./assets/images/avengers.png" alt="" class="img_aside">
+                <img src="./assets/images/avengers.png" alt="" class="img_aside">
+                <img src="./assets/images/avengers.png" alt="" class="img_aside">
+            </div>
+            <h3 class="nomtb"> x 10 </h3>
+        </article>
+        <article class="art_aside">
+            <div class="art_container">
+                <img src="./assets/images/hulk.png" alt="" class="img_aside">
+                <img src="./assets/images/hulk.png" alt="" class="img_aside">
+                <img src="./assets/images/hulk.png" alt="" class="img_aside">
+            </div>
+            <h3 class="nomtb"> x 15 </h3>
+        </article>
+        <article class="art_aside">
+            <div class="art_container">
+                <img src="./assets/images/ironman.png" alt="" class="img_aside">
+                <img src="./assets/images/ironman.png" alt="" class="img_aside">
+                <img src="./assets/images/ironman.png" alt="" class="img_aside">
+            </div>
+            <h3 class="nomtb"> x 20 </h3>
+        </article>
+        <article class="art_aside">
+            <div class="art_container">
+                <img src="./assets/images/thor.png" alt="" class="img_aside">
+                <img src="./assets/images/thor.png" alt="" class="img_aside">
+                <img src="./assets/images/thor.png" alt="" class="img_aside">
+            </div>
+            <h3 class="nomtb"> x 25 </h3>
+        </article>
+    </aside>
+    <!-- Los otros elementos del footer se generan pinchando en el h2 -->
     <footer class="footer">
-        <artcile class="stats" id="stats"><h2>Stats</h2></artcile>
+        <artcile class="stats" id="stats">
+            <h2>STATS</h2>
+        </artcile>
     </footer>
 
 
 
-    
+
     <script src="js/script.js"></script>
 </body>
 

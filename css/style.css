@@ -1,55 +1,57 @@
-body{
+@font-face {
+    font-family: marvel;
+    src: url(../assets/fonts/marvel.otf);
+}
+
+body {
+    font-family: marvel;
+    font-size: 1.5em;
+    box-sizing: border-box;
+    -webkit-text-stroke: 1px rgb(116, 29, 29);
+    color: rgb(255, 255, 255);
     height: 100vh;
     width: 100vw;
     margin: 0;
     padding: 0;
+    display: grid;
+    align-items: stretch;
+    grid-template: "header  header  header  header" 1fr
+        "main   main    main    aside" 5fr
+        "footer footer footer footer" 1fr /
+        1fr 1fr 1fr 1fr;
+    background-image: url(../assets/images/mainbg.jpg);
 }
-.header{
-    display: flex;
-    justify-content: space-between;
-    height: 15vh;
-    border-bottom: 1px solid red;
+
+.input {
+    background-color: rgba(77, 78, 80, 0.616);
+    border: 2px solid white;
+    border-radius: 5px;
+    color: aliceblue;
+    -webkit-text-stroke: 0;
 }
-.money{
-    border: 1px solid blue;
-    width: 30%
+
+.insertbtn {
+    border-radius: 5px
 }
-.main{
-    display: flex;
+
+.nomtb {
+    margin-top: 0;
+    margin-bottom: 0;
 }
-.slot__container{
-    display: flex;
-    border: 10px solid lawngreen;
+
+.marvelcolor {
+    color: white;
+    font-family: marvel;
+    background: rgb(91, 16, 16);
+    background: linear-gradient(0deg, rgba(91, 16, 16, 1) 0%, rgba(255, 0, 0, 1) 100%);
 }
-.slot{
-    height: 300px;
-    width: 300px;
-    border: 1px solid blue;
-    border-radius: 10%;
-    background-color: rgba(221, 202, 202, 0.452);
-    background-size: cover;
-    background-image: url(../assets/images/america.png);
-}
-.play{
-    width: 250px;
-    height: 250px;
-}
-.displaynone{
-    display: none;
-}
-.footer{
-    display: flex;
-    justify-content: space-around;
-    width: 100vw;
-}
-.footer__stats{
-    width: 15%;
-    border: 1px solid red;
-    display: flex;
-}
-.footer__logo{
-    border: 1px solid blue;
-    height: 100%;
-    width: 26%;
-    background-size: cover;
+
+@media (max-width: 900px) {
+    body{
+        grid-template: "header" 15%
+                       "main" 45%
+                       "aside" 25%
+                       "footer" 15% / 
+                       100%;
+    }
 }
